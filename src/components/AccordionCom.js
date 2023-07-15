@@ -1,38 +1,89 @@
 import Accordion from "react-bootstrap/Accordion";
 import ListGroup from "react-bootstrap/ListGroup";
-import Freiwilligendienste from "./Freiwilligendienste";
+import Freiwilligendienste from "../utils/Freiwilligendienste";
+import Kinderbetreuung from "../utils/Kinderbetreuung";
+import Seniorenbetreuung from "../utils/Seniorenbetreuung";
+import Sprachtandem from "../utils/Sprachtandem";
+import HilfeFurFluchtlinge from "../utils/HilfeFurFluchtlinge";
+import Sportverein from "../utils/Sportverein";
+import UmweltschutzUndReinigung from "../utils/UmweltschutzUndReinigung";
+import Tierheim from "../utils/Tierheim";
+
 
 function AccordionCom() {
   return (
     <Accordion>
       <Accordion.Item eventKey="0">
         <Accordion.Header>
-          Ehrenamtlich engagieren - Freiwilligendienste
+          Yardım Kuruluşlarında Gönüllü Çalışmak
         </Accordion.Header>
         <Accordion.Body>
           <ListGroup>
             <Freiwilligendienste />
-            {/* <ListGroup.Item>
-              <Freiwilligendienste />
-            </ListGroup.Item>
-            <ListGroup.Item>
-              <Freiwilligendienste />
-            </ListGroup.Item>
-            <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-            <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-            <ListGroup.Item>Vestibulum at eros</ListGroup.Item> */}
           </ListGroup>
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
-        <Accordion.Header>Wohltätigkeitsorganisationen</Accordion.Header>
+        <Accordion.Header>Çocuk Bakıcılığı (Kinderbetreuung)</Accordion.Header>
         <Accordion.Body>
           <ListGroup>
-            <ListGroup.Item>Cras justo odio</ListGroup.Item>
-            <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-            <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-            <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-            <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+            <Kinderbetreuung />
+          </ListGroup>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="2">
+        <Accordion.Header>Yaşlı Bakımı (Seniorenbetreuung)</Accordion.Header>
+        <Accordion.Body>
+          <ListGroup>
+            <Seniorenbetreuung />
+          </ListGroup>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="3">
+        <Accordion.Header>Dil Tandemleri (Sprachtandem)</Accordion.Header>
+        <Accordion.Body>
+          <ListGroup>
+            <Sprachtandem />
+          </ListGroup>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="4">
+        <Accordion.Header>
+          Mültecilere Yardım (Hilfe für Flüchtlinge)
+        </Accordion.Header>
+        <Accordion.Body>
+          <ListGroup>
+            <HilfeFurFluchtlinge />
+          </ListGroup>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="5">
+        <Accordion.Header>
+          Çevre Koruma ve Temizlik Faaliyetleri (Umweltschutz und Reinigung):
+        </Accordion.Header>
+        <Accordion.Body>
+          <ListGroup>
+            <UmweltschutzUndReinigung />
+          </ListGroup>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="6">
+        <Accordion.Header>
+          Hayvan Barınaklarında Gönüllü Çalışmak (Tierheim):
+        </Accordion.Header>
+        <Accordion.Body>
+          <ListGroup>
+            <Tierheim />
+          </ListGroup>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="7">
+        <Accordion.Header>
+          Spor Kulüplerinde Antrenörlük veya Yönetim Görevleri (Sportverein):
+        </Accordion.Header>
+        <Accordion.Body>
+          <ListGroup>
+            <Sportverein />
           </ListGroup>
         </Accordion.Body>
       </Accordion.Item>
