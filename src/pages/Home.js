@@ -4,14 +4,17 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import CarouselCom from "../components/CarouselCom";
-import AccordionCom from "../components/AccordionCom";
+// import AccordionCom from "../components/AccordionCom";
+import ListGroupCom from "../components/ListGroupCom";
 
 const Home = () => {
   return (
-    <div>
+    <div >
       <Container>
         <Row>
-          <Col sm={12}><CarouselCom /></Col>
+          <Col sm={12}>
+            <CarouselCom />
+          </Col>
         </Row>
         <Row>
           <Col sm={12}>
@@ -20,8 +23,9 @@ const Home = () => {
         </Row>
         <Row>
           <Col sm={12}>
-            <AccordionCom />
+            <ListGroupCom />
           </Col>
+          <Col sm={6}>{/* <AccordionCom /> */}</Col>
         </Row>
 
         {/* <Row>
